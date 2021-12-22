@@ -48,6 +48,10 @@ header{
               box-sizing: border-box;
       color: #ECDBBA;
    }
+
+   body:hover{
+    color:black;
+   }
   
    h1 {
       font-size: 30px;
@@ -131,7 +135,7 @@ header{
     
     
     a:active {
-     selected link 
+     /*selected link*/
       color: #489c79;
     }
   
