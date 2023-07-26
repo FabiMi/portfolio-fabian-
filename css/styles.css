@@ -122,7 +122,6 @@ a:active {
 }
 @media (max-width: 750px) {
   
-
 #navigation-list-toggle {
   display: none;
 }
@@ -132,6 +131,10 @@ a:active {
 @media (min-width: 750px) {
 #hamburger {
   display: none;
+}
+
+.smart-navigation-hide2{
+display: none;
 }
 }
 
@@ -143,7 +146,35 @@ a:active {
     height: 45px;
     width: 45px;
   }
+  .smart-navigation-hide{
+    display: none;
+    } 
+
+
+.smart-navigation{
+  transition: 1s;
+  position: absolute;
+  left: 85%;
+  top: 80px; 
+background-color: var(--button-primary-color) ;
+height: 100%;
+width: 90px;
 }
+
+.navigation-list {
+  display: flex;
+  flex-direction: column;
+}
+
+  .smart-navigation-hide{
+    display: none;
+    }
+
+}
+
+
+
+
 
 li {
   padding: 6px 0;
@@ -705,7 +736,6 @@ table {
     width: auto;
     min-height: auto;
     margin: 0;
-
   }
 
   .grid__item:hover {
@@ -805,4 +835,16 @@ table {
   flex-direction: row;
 }
 
+.tech{
+  display: flex;
+  flex-direction: row;
+  padding-right: 10px;
+  list-style: square inside;
+}
+
+li {
+  display: block;
+  padding-left: 8px;
+
+}
 /*<-----------here ends the Work-Page------------>*/

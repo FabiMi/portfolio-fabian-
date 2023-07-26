@@ -6,7 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>Fabian Michaelis - Portfolio</title>
    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-   <link rel="shortcut icon" href="https://www.wikipedia.org/static/favicon/wikipedia.ico">
+   <link rel="shortcut icon" href="img/Shutterstock_2183869739.png">
    <link rel="stylesheet" type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
    <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -16,14 +16,12 @@
 <body>
 
    <!--the head starts here-->
-
-
    <header class="page-header">
       <div class="page-header__item">
          <img src="img/Shutterstock_2183869739.png" id="logo" alt="logo" class="logo" />
       </div>
       <nav class="main-navigation ">
-         <ul class="navigation-list" role="menubar">
+         <ul class="navigation-list" id="navigation-list-toggle" role="menubar">
             <li role="presentation">
                <a class=" navigation-list__item" href="index.html" id="home" role="menuitem">Home</a>
             </li>
@@ -37,143 +35,258 @@
                <a class=" navigation-list__item" href="contact.html" id="contact" role="menuitem">Contact</a>
             </li>
          </ul>
-      </nav>
+         <img src="./img/134216_menu_lines_hamburger_icon.png" id="hamburger" alt="menu" class="menu" />
+         <nav class="smart-navigation smart-navigation-hide smart-navigation-hide2 " id="smart-navigation">
+            <ul class="navigation-list" id="navigation-list-hide" role="menubar">
+               <li role="presentation">
+                  <a class=" navigation-list__item" href="index.html" id="home" role="menuitem">Home</a>
+               </li>
+               <li role="presentation">
+                  <a class=" navigation-list__item" href="about.html" target="_blank" id="about"
+                     role="menuitem">About</a>
+               </li>
+               <li role="presentation">
+                  <a class=" navigation-list__item" href="work.html" id="work" role="menuitem">Work</a>
+               </li>
+               <li role="presentation">
+                  <a class=" navigation-list__item" href="contact.html" id="contact" role="menuitem">Contact</a>
+               </li>
+            </ul>
+         </nav>
 
 
    </header>
 
 
 
+
    <!--the head ends here-->
 
    <div id="myWork">
-<h1 id="mywork">My Work</h1>
-   <section id="grid-section">
+      <h1 id="mywork">My Work</h1>
+      <section id="grid-section">
 
-      <div class="grid">
-         <!-- Grid items will live here -->
-         <div class="grid__item">
-            <div class="project-imgs-wrapper chatAppimg">
-               <img class="project-imgs" src="./img/ChatApp/IMG_7536.PNG" />
-               <img class="project-imgs" src="./img/ChatApp/IMG_7540.PNG" />
-            </div>
-            <h2>Mobile Chat App</h2>
-            <p>
-               This is a chat application built with React Native that allows users to send and receive messages in
-               real-time. It utilizes the react-native-gifted-chat library for the chat interface and integrates with
-               Firebase Firestore for message storage and retrieval. </p>
+         <div class="grid">
+            <!-- Grid items will live here -->
+            <div class="grid__item">
+               <div class="project-imgs-wrapper chatAppimg">
+                  <img class="project-imgs" src="./img/ChatApp/IMG_7536.PNG" />
+                  <img class="project-imgs" src="./img/ChatApp/IMG_7540.PNG" />
+               </div>
+               <h2>Mobile Chat App</h2>
+               <p>
+                  This is a chat application built with React Native that allows users to send and receive messages in
+                  real-time. It utilizes the react-native-gifted-chat library for the chat interface and integrates with
+                  Firebase Firestore for message storage and retrieval. </p>
+
+               <h4>Objective</h4>
+               <ul class="objectives">
+                  <li>Using React Native, build a chat app for mobile devices.</li>
+               </ul>
+
+               <h4>Stack used</h4>
+               <ul class="tech">
+                  <li>React</li>
+                  <li>React Native</li>
+                  <li>Expo</li>
+                  <li>Google Firebase</li>
+               </ul>
                <div class="project-links">
-            <a href="https://github.com/FabiMi/chat-app">See project on GitHub</a>
+                  <a href="https://github.com/FabiMi/chat-app">See project on GitHub</a>
+               </div>
+            </div>
+
+            <div class="grid__item">
+               <div class="project-imgs-wrapper">
+                  <img class="project-imgs" src="./img/MovieApi/Screenshot 2023-07-22 at 16.25.37.png" />
+               </div>
+               <h2>Movie API</h2>
+               <p>
+                  This API allows you to manage movies, users, and authentication for MyFlixClient and
+                  myFlix-Angular-client. It is built using Node.js, Express, and MongoDB, and includes various
+                  dependencies
+                  to handle authentication and data validation.
+               </p>
+               <h4>Objective</h4>
+               <ul class="objectives">
+                  <li>Build the server-side component for a movie app called myFlix. The web application provides users
+                     with
+                     access to information about different movies, directors, and genres. Users are able to sign up,
+                     update their
+                     personal information, and create a list of their favorite movies.</li>
+               </ul>
+
+               <h4>Stack used</h4>
+               <ul class="tech">
+                  <li>JavaScript</li>
+                  <li>MongoDB</li>
+                  <li>Express</li>
+                  <li>Node.js</li>
+                  <li>Postman</li>
+                  <li>PostgreSQL</li>
+                  <li>Mongoose</li>
+               </ul>
+               <div class="project-links">
+                  <a href="https://github.com/FabiMi/movie_api">See project on GitHub</a>
+               </div>
+
+            </div>
+
+            <div class="grid__item">
+               <div class="project-imgs-wrapper">
+                  <img class="project-imgs" src="./img/ReactMovieApp/Screenshot 2023-07-20 at 12.47.19.png" />
+               </div>
+               <h2>React Movie App</h2>
+               <p>
+                  MyFlixClient is a web application built with React, Redux, and Bootstrap that allows you to browse and
+                  explore a collection of movies and TV shows.
+               </p>
+               <h4>Objective</h4>
+               <ul class="objectives">
+                  <li>Using React, build the client-side component for a movie app called myFlix based on its existing
+                     server-side code (REST API and database).</li>
+               </ul>
+
+               <h4>Stack used</h4>
+               <ul class="tech">
+                  <li>React</li>
+                  <li>Node.js</li>
+                  <li>Express</li>
+                  <li>Parcel</li>
+                  <li>React Bootstrap</li>
+               </ul>
+               <div class="project-links">
+                  <a href="https://github.com/FabiMi/MyFlixClient">See project on GitHub</a>
+                  <a href="https://fabiflix.netlify.app/">React Movie App</a>
+               </div>
+            </div>
+
+            <div class="grid__item">
+               <div class="project-imgs-wrapper">
+                  <img class="project-imgs" src="./img/Pokedex/Screenshot 2023-07-19 at 16.57.35.png" />
+               </div>
+               <h2>Pokedex</h2>
+               <p>
+                  Pokédex is a JavaScript and jQuery-based application that fetches data from an API to create a digital
+                  encyclopedia of Pokémon. It allows developers to integrate a comprehensive Pokédex into their
+                  projects,
+                  offering users the ability to browse and search for information about different Pokémon species.
+               </p>
+
+               <h4>Objective</h4>
+               <ul class="objectives">
+                  <li>Build a small web application with HTML, CSS and JavaScript that loads data from an external API
+                     and
+                     enables viewing of data points in detail.</li>
+               </ul>
+               <h4>Stack used</h4>
+               <ul class="tech">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>jQuery</li>
+                  <li>Bootstrap</li>
+                  <li>Prettier</li>
+               </ul>
+               <div class="project-links">
+                  <a href="https://github.com/FabiMi/Pokedex2">See project on GitHub</a>
+                  <a href="https://fabimi.github.io/Pokedex2/">Pokedex</a>
+               </div>
+            </div>
+
+
+            <div class="grid_item grid__item_long ">
+               <div class="project-imgs-wrapper grid_item_long_img">
+                  <img class="project-imgs" src="./img/MeetApp/Screenshot 2023-07-21 at 16.31.14.png" />
+                  <img class="project-imgs" src="./img/MeetApp/Screenshot 2023-07-21 at 16.31.27.png" />
+               </div>
+               <h2>Meet App</h2>
+               <p>
+                  Meet is a web application that enables users to connect and interact with others in real-time. It is
+                  built using React, Express, and other powerful libraries to provide a smooth and engaging experience.
+               </p>
+               <h4>Objective</h4>
+               <ul class="objectives">
+                  <li>Build a serverless, progressive web application with React using a test-driven development (TDD)
+                     technique.</li>
+                  <li>Use the Google Calendar API to fetch upcoming events.</li>
+                  <li>Support offline access.</li>
+               </ul>
+               <h4>Stack used</h4>
+               <ul class="tech">
+                  <li>React / Create-React-App (CRA)</li>
+                  <li>CSS</li>
+                  <li>Jest</li>
+                  <li>Cucumber</li>
+                  <li>Puppeter</li>
+                  <li>Atatus</li>
+                  <li>Lighthouse</li>
+                  <li>Recharts</li>
+               </ul>
+               <div class="project-links">
+                  <a href="https://github.com/FabiMi/meet/blob/Task_4.10">See project on GitHub</a>
+                  <a href="https://fabimi.github.io/meet/">The Meet App</a>
+               </div>
+            </div>
+
+
+            <div class="grid__item">
+               <div class="project-imgs-wrapper ">
+                  <img class="project-imgs" src="./img/AngularMovieApp/Screenshot 2023-07-20 at 12.46.09.png" />
+                  <img class="project-imgs" src="./img/AngularMovieApp/Screenshot 2023-07-20 at 12.46.51.png" />
+               </div>
+               <h2>Angular Movie App</h2>
+               <p>
+                  Single-page, Responsive Design: The myFlix app is built as a single-page application using Angualar,
+                  ensuring a seamless user experience. It is fully responsive, adapting to different screen sizes and
+                  devices. Routing and Rich Interactions: Enjoy smooth navigation through the app with routing
+                  functionality, allowing you to explore different movie categories and individual movie details. The
+                  app
+                  also offers rich interactions, enhancing your engagement and enjoyment.
+               </p>
+
+               <h4>Objective</h4>
+               <ul class="objectives">
+                  <li>Using Angular, build the client-side component for a movie app called myFlix based on its existing
+                     server-side code (REST API and database).</li>
+               </ul>
+               <h4>Stack used</h4>
+               <ul class="tech">
+                  <li>Angular</li>
+                  <li>Node.js</li>
+                  <li>Angular Material</li>
+               </ul>
+               <div class="project-links">
+                  <a href="https://github.com/FabiMi/myFlix-Angular-client">See project on GitHub</a>
+                  <a href="https://fabimi.github.io/myFlix-Angular-client">Angular Movie App</a>
+               </div>
             </div>
          </div>
-
-         <div class="grid__item">
-            <div class="project-imgs-wrapper">
-               <img class="project-imgs" src="./img/MovieApi/Screenshot 2023-07-22 at 16.25.37.png" />
-            </div>
-            <h2>Movie API</h2>
-            <p>
-               This API allows you to manage movies, users, and authentication for MyFlixClient and
-               myFlix-Angular-client. It is built using Node.js, Express, and MongoDB, and includes various dependencies
-               to handle authentication and data validation.
-            </p>
-            <div class="project-links">
-            <a href="https://github.com/FabiMi/movie_api">See project on GitHub</a>
-            </div>
-
-         </div>
-
-         <div class="grid__item">
-            <div class="project-imgs-wrapper">
-               <img class="project-imgs" src="./img/ReactMovieApp/Screenshot 2023-07-20 at 12.47.19.png" />
-            </div>
-            <h2>React Movie App</h2>
-            <p>
-               MyFlixClient is a web application built with React, Redux, and Bootstrap that allows you to browse and
-               explore a collection of movies and TV shows.
-            </p>
-            <div class="project-links">
-            <a href="https://github.com/FabiMi/MyFlixClient">See project on GitHub</a>
-            <a href="https://fabiflix.netlify.app/">React Movie App</a>
-            </div>
-         </div>
-
-         <div class="grid__item">
-            <div class="project-imgs-wrapper">
-               <img class="project-imgs" src="./img/Pokedex/Screenshot 2023-07-19 at 16.57.35.png" />
-            </div>
-            <h2>Pokedex</h2>
-            <p>
-               Pokédex is a JavaScript and jQuery-based application that fetches data from an API to create a digital
-               encyclopedia of Pokémon. It allows developers to integrate a comprehensive Pokédex into their projects,
-               offering users the ability to browse and search for information about different Pokémon species.
-            </p>
-            <div class="project-links">
-            <a href="https://github.com/FabiMi/Pokedex2">See project on GitHub</a>
-            <a href="https://fabimi.github.io/Pokedex2/">Pokedex</a>
-            </div>
-         </div>
-
-
-         <div class="grid_item grid__item_long ">
-            <div class="project-imgs-wrapper grid_item_long_img">
-               <img class="project-imgs" src="./img/MeetApp/Screenshot 2023-07-21 at 16.31.14.png" />
-               <img class="project-imgs" src="./img/MeetApp/Screenshot 2023-07-21 at 16.31.27.png" />
-            </div>
-            <h2>Meet App</h2>
-            <p>
-               Meet is a web application that enables users to connect and interact with others in real-time. It is
-               built using React, Express, and other powerful libraries to provide a smooth and engaging experience.
-            </p>
-            <div class="project-links">
-            <a href="https://github.com/FabiMi/meet/blob/Task_4.10">See project on GitHub</a>
-            <a href="https://fabimi.github.io/meet/">The Meet App</a>
-            </div>
-         </div>
-
-
-         <div class="grid__item">
-            <div class="project-imgs-wrapper ">
-               <img class="project-imgs" src="./img/AngularMovieApp/Screenshot 2023-07-20 at 12.46.09.png" />
-               <img class="project-imgs" src="./img/AngularMovieApp/Screenshot 2023-07-20 at 12.46.51.png" />
-            </div>
-            <h2>Angular Movie App</h2>
-            <p>
-               Single-page, Responsive Design: The myFlix app is built as a single-page application using Angualar,
-               ensuring a seamless user experience. It is fully responsive, adapting to different screen sizes and
-               devices. Routing and Rich Interactions: Enjoy smooth navigation through the app with routing
-               functionality, allowing you to explore different movie categories and individual movie details. The app
-               also offers rich interactions, enhancing your engagement and enjoyment.
-            </p>
-            <div class="project-links">
-            <a href="https://github.com/FabiMi/myFlix-Angular-client">See project on GitHub</a>
-            <a href="https://fabimi.github.io/myFlix-Angular-client">Angular Movie App</a>
-            </div>
-         </div>
-      </div>
-   </section>
-</div>
+      </section>
+   </div>
    <!--The footer starts here-->
-        
-   <footer class="page-footer"> 
-            
-      <!--social-media starts here-->   
-     
-          
-      
-          <!-- Github logo -->
-         <a href="https://github.com/FabiMi"><img class="icons" src="https://img.icons8.com/material/100/000000/github.png" alt="github"></a>
-          
 
-          <!-- LinkedIn logo -->
-          <a href="https://linkedin.com/in/fabian-michaelis-84b191177"><img class="icons" src="https://img.icons8.com/doodle/48/000000/linkedin--v2.png" alt="linkedin"></a>
-         
-  </footer>
+   <footer class="page-footer">
 
-  <!--the footer ends here-->
+      <!--social-media starts here-->
+
+
+
+      <!-- Github logo -->
+      <a href="https://github.com/FabiMi"><img class="icons" src="https://img.icons8.com/material/100/000000/github.png"
+            alt="github"></a>
+
+
+      <!-- LinkedIn logo -->
+      <a href="https://linkedin.com/in/fabian-michaelis-84b191177"><img class="icons"
+            src="https://img.icons8.com/doodle/48/000000/linkedin--v2.png" alt="linkedin"></a>
+
+   </footer>
+
+   <!--the footer ends here-->
    <!--social media ends here-->
    <script src="./js/tota11y.min.js "></script>
-
+   <script src="./js/index.js "></script>
 </body>
 
 </html>

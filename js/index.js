@@ -26,9 +26,12 @@ let picture = document.getElementById("pic");
 
    },false);
 
+let hamburger = document.getElementById("hamburger");
+   hamburger.addEventListener("click", function(){
+      let smartmenu = document.getElementById("smart-navigation");
+         smartmenu.classList.toggle("smart-navigation-hide");
 
-
-
+   },false);
 
 
 },false);
