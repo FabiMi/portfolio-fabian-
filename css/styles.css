@@ -45,12 +45,13 @@ Secondary Color (Orange): #e0b354;
   width: 100%;
   position: fixed;
   top: 0;
+  background-color: var(--primary-color);
 }
+
 
 a {
   color: var(--primary-link-color);
   text-decoration: none;
-  margin-right: 5%;
 }
 
 a:visited {
@@ -346,6 +347,18 @@ button:focus {
 
 .project-links{
   text-align: center;
+  margin-left: auto;
+  align-items: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-links a{
+
+  margin-top: 10px;
+  margin-bottom: 0;
+
+
 }
 
 .about-grid {
@@ -369,10 +382,17 @@ button:focus {
   grid-column: 1/ 3;
   -ms-grid-row: 2;
   grid-row: 2 / 2;
-  margin-left: 20%;
-  margin-right: 20%;
+align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 30px;
+
+}
 
 
+.about-grid-skills table{
+
+margin: 0 auto;
 
 }
 
@@ -652,33 +672,28 @@ align-items: center;
 
 }
 
-/*<------contact-page starts here------>*/
 
+/*<------contact-page starts here------>*/
+.contact-section{
+
+
+justify-content: center;
+align-items: center;
+
+}
 #contact-data {
-  justify-content: center;
-  align-items: center;
-  margin-left: 15%;
+  justify-content: center !important;
+ text-align: center;
   margin-top: 20px;
+
+  
   
 }
 
-@media (max-width: 750px) {
-  #contact-data {
-    padding-left: 20%;
-    top: 20%;
-  }
-}
 
 
 #contact-list {
   list-style: none;
-
-}
-
-
-input {
-
-  margin-left: 3rem;
 
 
 }
@@ -713,7 +728,6 @@ table {
   -ms-flex-direction: row;
   justify-content: center;
   align-items: center;
-
   bottom: 0;
   margin-top: 5%;
 
@@ -722,20 +736,37 @@ table {
 .icons {
   width: 30px;
   height: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
+
+#github{
+filter: invert(100%);
+
+}
+
+
 /*<-------here ends the footer-------->*/
 
 /*<-----------here begins the Work_Page------------>*/
+* {
+  box-sizing: border-box;
+}
 
 .grid {
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 1fr 1fr;
+  margin: 20px; 
+
 }
 
 .grid__item {
   background-color: var(--primary-card-background-color);
   color: var(--primary-color);
+  overflow: hidden;
+  width: 100%;
+  padding: 20px;
 }
 
 .grid__item img {
@@ -754,16 +785,34 @@ table {
 }
 
 #chatAppimgWrapper{
+  clear: both;
+}
+
+#chatAppimgWrapper{
   display: flex;
   flex-direction: row;
+  max-width: 100%;
   gap: 20px; 
-  justify-content: space-evenly;
   flex-wrap: wrap;
+
+  justify-content: space-evenly; 
+
 }
+
+
+
+.scrollable-container{
+  justify-content:  space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;  
+    }
 
 #chatAppimgWrapper img{
 max-width: 200px;
+
 }
+
+
 
 @media (min-width: 500px) and (max-width: 900px) {
 
@@ -784,6 +833,10 @@ max-width: 200px;
     grid-row: 5 / span 1;
     grid-column: 1 /  span 2;
   }
+
+  
+
+
 }
 
 
@@ -816,10 +869,26 @@ max-width: 200px;
     grid-column: auto;
   }
 
-  #chatAppimgWrapper{
-    overflow: scroll;
-    max-width: 100%;
+  #chatAppimgWrapper {
+    width: 100%;
+    overflow-y: scroll;
   }
+  
+  .scrollable-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  #chatAppimgWrapper img:first-child{
+    max-width: 200px;
+    margin-left: 35%;
+    }
+
+
+
 }
 
 
