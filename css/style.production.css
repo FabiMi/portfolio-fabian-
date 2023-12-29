@@ -266,13 +266,7 @@ li {
       color: #2b2b2b;
     }
 
-    #code-link
-    {
-      
-      margin-left: 1.3rem;
-      margin-top:0.5rem;
-    }
-
+  
   /*Buttons*/
   
   
@@ -306,6 +300,12 @@ li {
     padding: 4px;
   }
 
+  #code-link
+    {
+      width: 10px;
+      height: 100px;
+    
+    }
 
  
    
